@@ -1,11 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="27K-dc-M5v">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Calculator View Controller-->
+        <!--Photo Table-->
+        <scene sceneID="bt5-vr-ZV8">
+            <objects>
+                <viewController id="Ck7-wi-YcS" customClass="PhotoTableViewController" customModule="ios_ui_automation_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="54i-gX-nok"/>
+                        <viewControllerLayoutGuide type="bottom" id="x5F-Gd-1TO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kmO-EM-Cxb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Photo Table" id="3zY-cT-ELT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o9h-W8-3mG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="167" y="245"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Rjn-6y-dtJ">
+            <objects>
+                <tabBarController id="27K-dc-M5v" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="e7T-BN-doI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="vUM-qk-hdq"/>
+                        <segue destination="Ck7-wi-YcS" kind="relationship" relationship="viewControllers" id="9Kx-gD-azI"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OU7-hv-nnL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-653" y="-85"/>
+        </scene>
+        <!--Calculator-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CalculatorViewController" customModule="ios_ui_automation_demo" customModuleProvider="target" sceneMemberID="viewController">
@@ -24,7 +61,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfN-wS-yaB">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfN-wS-yaB">
                                 <rect key="frame" x="135" y="62" width="108" height="104"/>
                                 <accessibility key="accessibilityConfiguration" identifier="8"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -33,7 +70,7 @@
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RD2-wd-YMH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I9b-al-F02">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I9b-al-F02">
                                 <rect key="frame" x="246" y="62" width="107" height="104"/>
                                 <accessibility key="accessibilityConfiguration" identifier="9"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -42,7 +79,7 @@
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ch-Ko-UeV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DpG-QK-DpE">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DpG-QK-DpE">
                                 <rect key="frame" x="24" y="62" width="107" height="104"/>
                                 <accessibility key="accessibilityConfiguration" identifier="7"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -51,7 +88,7 @@
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aYj-Kr-eNG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyS-GB-lQN">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyS-GB-lQN">
                                 <rect key="frame" x="135" y="170" width="108" height="104"/>
                                 <accessibility key="accessibilityConfiguration" identifier="5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -60,7 +97,7 @@
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hms-zs-8aq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxa-9q-KRy">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxa-9q-KRy">
                                 <rect key="frame" x="246" y="170" width="107" height="104"/>
                                 <accessibility key="accessibilityConfiguration" identifier="6"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -69,7 +106,7 @@
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1xe-UC-MeB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bL-V5-Yz5">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bL-V5-Yz5">
                                 <rect key="frame" x="135" y="277" width="108" height="104"/>
                                 <accessibility key="accessibilityConfiguration" identifier="2"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -78,7 +115,7 @@
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k1X-Tl-7jz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07g-g7-4b1">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07g-g7-4b1">
                                 <rect key="frame" x="246" y="277" width="107" height="104"/>
                                 <accessibility key="accessibilityConfiguration" identifier="3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -87,7 +124,7 @@
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rj0-1k-2s8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgN-NT-2dT">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgN-NT-2dT">
                                 <rect key="frame" x="246" y="385" width="107" height="104"/>
                                 <accessibility key="accessibilityConfiguration" identifier="enter"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -96,7 +133,7 @@
                                     <action selector="enter" destination="BYZ-38-t0r" eventType="touchUpInside" id="UmG-8F-brc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mn8-LV-B2S">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mn8-LV-B2S">
                                 <rect key="frame" x="24" y="277" width="107" height="104"/>
                                 <accessibility key="accessibilityConfiguration" identifier="1"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -105,7 +142,7 @@
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MZ0-ek-70D"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ma-iM-vY8">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ma-iM-vY8">
                                 <rect key="frame" x="135" y="385" width="108" height="104"/>
                                 <accessibility key="accessibilityConfiguration" identifier="0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -114,7 +151,7 @@
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Elg-kv-53g"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y36-hc-4iS">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y36-hc-4iS">
                                 <rect key="frame" x="357" y="62" width="108" height="104"/>
                                 <accessibility key="accessibilityConfiguration" identifier="multiply"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -123,7 +160,7 @@
                                     <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AxD-nE-qzm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gva-RW-Oa9">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gva-RW-Oa9">
                                 <rect key="frame" x="357" y="170" width="108" height="104"/>
                                 <accessibility key="accessibilityConfiguration" identifier="divide"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -132,7 +169,7 @@
                                     <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zLq-gk-ENc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ca-rg-8tj">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ca-rg-8tj">
                                 <rect key="frame" x="357" y="277" width="108" height="104"/>
                                 <accessibility key="accessibilityConfiguration" identifier="add"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -141,7 +178,7 @@
                                     <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0KX-FS-bid"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IgS-OW-n9m">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IgS-OW-n9m">
                                 <rect key="frame" x="357" y="385" width="108" height="104"/>
                                 <accessibility key="accessibilityConfiguration" identifier="subtract"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -150,7 +187,7 @@
                                     <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kSz-53-eiL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhd-v2-Yyy">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhd-v2-Yyy">
                                 <rect key="frame" x="469" y="62" width="107" height="104"/>
                                 <accessibility key="accessibilityConfiguration" identifier="sine"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -159,7 +196,7 @@
                                     <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hCU-vB-bIN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTp-HQ-UrQ">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTp-HQ-UrQ">
                                 <rect key="frame" x="469" y="170" width="107" height="104"/>
                                 <accessibility key="accessibilityConfiguration" identifier="cosine"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -168,7 +205,7 @@
                                     <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MKL-uS-bjF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfl-lf-7Ss">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfl-lf-7Ss">
                                 <rect key="frame" x="469" y="277" width="107" height="104"/>
                                 <accessibility key="accessibilityConfiguration" identifier="pi"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -177,7 +214,7 @@
                                     <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tJD-f8-krh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMz-As-wMq">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMz-As-wMq">
                                 <rect key="frame" x="469" y="385" width="107" height="104"/>
                                 <accessibility key="accessibilityConfiguration" identifier="squareRoot"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -186,7 +223,7 @@
                                     <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rjm-Ek-CfK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bb-o9-ftx">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bb-o9-ftx">
                                 <rect key="frame" x="24" y="385" width="107" height="104"/>
                                 <accessibility key="accessibilityConfiguration" identifier="."/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -195,7 +232,7 @@
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J9N-s3-W9p"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgu-oB-49Z">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgu-oB-49Z">
                                 <rect key="frame" x="24" y="492" width="107" height="104"/>
                                 <accessibility key="accessibilityConfiguration" identifier="clear"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -211,7 +248,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Px8-il-vBZ">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Px8-il-vBZ">
                                 <rect key="frame" x="24" y="170" width="107" height="104"/>
                                 <accessibility key="accessibilityConfiguration" identifier="4"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -315,6 +352,7 @@
                             <constraint firstItem="Px8-il-vBZ" firstAttribute="width" secondItem="DpG-QK-DpE" secondAttribute="width" id="yjC-ap-7f9"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Calculator" id="GCN-d3-112"/>
                     <connections>
                         <outlet property="display" destination="2SD-00-Rnb" id="1bT-cG-JTb"/>
                         <outlet property="history" destination="PmY-Kx-gpS" id="SWM-tE-s1K"/>
@@ -322,7 +360,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="787" y="222"/>
+            <point key="canvasLocation" x="167" y="-424"/>
         </scene>
     </scenes>
 </document>
