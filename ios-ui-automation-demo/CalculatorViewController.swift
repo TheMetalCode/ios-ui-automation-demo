@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
-//  JJH_Calculator
+//  CalculatorViewController.swift
+//  ios-ui-automation-demo
 //
-//  Created by Jason Hagglund on 7/10/15.
+//  Created by Jason Hagglund on 4/19/16.
 //  Copyright © 2016 Jason Hagglund. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class CalculatorViewController: UIViewController {
     
     @IBOutlet weak var display: UILabel!
     @IBOutlet weak var history: UILabel!
