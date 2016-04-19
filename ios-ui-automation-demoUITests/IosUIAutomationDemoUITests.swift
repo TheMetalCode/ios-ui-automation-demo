@@ -1,17 +1,15 @@
 //
-//  JJH_CalculatorUITests.swift
-//  JJH_CalculatorUITests
+//  IosUIAutomationDemoUITests.swift
+//  ios-ui-automation-demo
 //
-//  Created by Jason Hagglund on 7/10/15.
+//  Created by Jason Hagglund on 4/19/16.
 //  Copyright © 2016 Jason Hagglund. All rights reserved.
 //
-
-// TODO: Finish up CalculatorScreen and clean this crap up
 
 import Foundation
 import XCTest
 
-class JJH_CalculatorUITests: XCTestCase {
+class IosUIAutomationDemoUITests: XCTestCase {
         
     let app = XCUIApplication()
     var calcScreen : CalculatorScreen!

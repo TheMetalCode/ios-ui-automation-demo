@@ -12,9 +12,9 @@
 		F20121311CB31CA400B4EBBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20121291CB31CA400B4EBBB /* LaunchScreen.storyboard */; };
 		F20121321CB31CA400B4EBBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F201212B1CB31CA400B4EBBB /* Main.storyboard */; };
 		F20121341CB31CA400B4EBBB /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F201212E1CB31CA400B4EBBB /* CalculatorViewController.swift */; };
-		F20121391CB31CC100B4EBBB /* ios-ui-automation-demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20121371CB31CC100B4EBBB /* ios-ui-automation-demoTests.swift */; };
+		F20121391CB31CC100B4EBBB /* IosUIAutomationDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20121371CB31CC100B4EBBB /* IosUIAutomationDemoTests.swift */; };
 		F201213E1CB31CCD00B4EBBB /* CalculatorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F201213B1CB31CCD00B4EBBB /* CalculatorScreen.swift */; };
-		F20121401CB31CCD00B4EBBB /* ios-ui-automation-demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F201213D1CB31CCD00B4EBBB /* ios-ui-automation-demoUITests.swift */; };
+		F20121401CB31CCD00B4EBBB /* IosUIAutomationDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F201213D1CB31CCD00B4EBBB /* IosUIAutomationDemoUITests.swift */; };
 		F28FDC3F1CC6A7E30015E835 /* PhotoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28FDC3E1CC6A7E30015E835 /* PhotoTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,10 +46,10 @@
 		F201212D1CB31CA400B4EBBB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F201212E1CB31CA400B4EBBB /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		F20121361CB31CC100B4EBBB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F20121371CB31CC100B4EBBB /* ios-ui-automation-demoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ios-ui-automation-demoTests.swift"; sourceTree = "<group>"; };
+		F20121371CB31CC100B4EBBB /* IosUIAutomationDemoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IosUIAutomationDemoTests.swift; sourceTree = "<group>"; };
 		F201213B1CB31CCD00B4EBBB /* CalculatorScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorScreen.swift; sourceTree = "<group>"; };
 		F201213C1CB31CCD00B4EBBB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F201213D1CB31CCD00B4EBBB /* ios-ui-automation-demoUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ios-ui-automation-demoUITests.swift"; sourceTree = "<group>"; };
+		F201213D1CB31CCD00B4EBBB /* IosUIAutomationDemoUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IosUIAutomationDemoUITests.swift; sourceTree = "<group>"; };
 		F28FDC3E1CC6A7E30015E835 /* PhotoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,7 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				F28FDC421CC6A8760015E835 /* Supporting Files */,
-				F20121371CB31CC100B4EBBB /* ios-ui-automation-demoTests.swift */,
+				F20121371CB31CC100B4EBBB /* IosUIAutomationDemoTests.swift */,
 			);
 			path = "ios-ui-automation-demoTests";
 			sourceTree = SOURCE_ROOT;
@@ -126,7 +126,7 @@
 			children = (
 				F28FDC411CC6A8660015E835 /* Supporting Files */,
 				F28FDC401CC6A8340015E835 /* Screen Objects */,
-				F201213D1CB31CCD00B4EBBB /* ios-ui-automation-demoUITests.swift */,
+				F201213D1CB31CCD00B4EBBB /* IosUIAutomationDemoUITests.swift */,
 			);
 			path = "ios-ui-automation-demoUITests";
 			sourceTree = SOURCE_ROOT;
@@ -303,7 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F20121391CB31CC100B4EBBB /* ios-ui-automation-demoTests.swift in Sources */,
+				F20121391CB31CC100B4EBBB /* IosUIAutomationDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F201213E1CB31CCD00B4EBBB /* CalculatorScreen.swift in Sources */,
-				F20121401CB31CCD00B4EBBB /* ios-ui-automation-demoUITests.swift in Sources */,
+				F20121401CB31CCD00B4EBBB /* IosUIAutomationDemoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

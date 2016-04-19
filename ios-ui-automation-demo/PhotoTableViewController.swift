@@ -8,6 +8,6 @@
 
 import UIKit
 
-class PhotoTableViewController: UIViewController {
-
+class PhotoTableViewController: UITableViewController {
+    
 }

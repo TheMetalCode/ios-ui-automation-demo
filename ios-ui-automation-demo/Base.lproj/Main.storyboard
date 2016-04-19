@@ -4,25 +4,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--Photo Table-->
-        <scene sceneID="bt5-vr-ZV8">
-            <objects>
-                <viewController id="Ck7-wi-YcS" customClass="PhotoTableViewController" customModule="ios_ui_automation_demo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="54i-gX-nok"/>
-                        <viewControllerLayoutGuide type="bottom" id="x5F-Gd-1TO"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kmO-EM-Cxb">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Photo Table" id="3zY-cT-ELT"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o9h-W8-3mG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="167" y="245"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Rjn-6y-dtJ">
             <objects>
@@ -34,7 +15,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="vUM-qk-hdq"/>
-                        <segue destination="Ck7-wi-YcS" kind="relationship" relationship="viewControllers" id="9Kx-gD-azI"/>
+                        <segue destination="P3D-32-OhG" kind="relationship" relationship="viewControllers" id="ta0-Qh-vEj"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OU7-hv-nnL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -268,6 +249,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="167" y="-424"/>
+        </scene>
+        <!--Photo Table-->
+        <scene sceneID="HvT-E1-JzB">
+            <objects>
+                <tableViewController id="P3D-32-OhG" customClass="PhotoTableViewController" customModule="ios_ui_automation_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="zEU-Oh-MI3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="UgB-XQ-WHu">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UgB-XQ-WHu" id="6AS-a2-u4i">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="P3D-32-OhG" id="u8n-X1-fY2"/>
+                            <outlet property="delegate" destination="P3D-32-OhG" id="af3-iu-b2f"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Photo Table" id="0Us-lQ-N33"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R5O-rb-x1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="167" y="407"/>
         </scene>
     </scenes>
 </document>

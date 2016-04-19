@@ -1,14 +1,14 @@
 //
-//  JJH_CalculatorTests.swift
-//  JJH_CalculatorTests
+//  IosUIAutomationDemoTests.swift
+//  ios-ui-automation-demo
 //
-//  Created by Jason Hagglund on 7/10/15.
+//  Created by Jason Hagglund on 4/19/16.
 //  Copyright © 2016 Jason Hagglund. All rights reserved.
 //
 
 import XCTest
 
-class JJH_CalculatorTests: XCTestCase {
+class IosUIAutomationDemoTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
