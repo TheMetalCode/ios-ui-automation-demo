@@ -11,6 +11,7 @@ import XCTest
 
 extension XCTestCase {
     
+    // largely borrowed from: https://gist.github.com/kcharwood/0a57d7a207aba1d578da
     func waitForActivityIndicatorToFinishSpinning(activityIndicatorElement: XCUIElement, timeout: NSTimeInterval = 30.0) {
         let inProgressPredicate = NSPredicate(format: "exists == true")
         self.expectationForPredicate(inProgressPredicate, evaluatedWithObject: activityIndicatorElement, handler: nil)
