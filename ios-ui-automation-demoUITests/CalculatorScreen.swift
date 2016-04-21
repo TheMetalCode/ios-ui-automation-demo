@@ -114,4 +114,18 @@ class CalculatorScreen {
         }
         enterOperation(op)
     }
+    
+    // Enters each calculation: accepts an array of size 2-3 arrays where the last element must be a string representing an operation
+    func enterCalculations(calculations: Array<Array<String>>) {
+        for calculation in calculations {
+            if calculation.count == 3 {
+                enterCalculation([calculation[0], calculation[1]], op: calculation [2])
+            } else if calculation.count == 2 {
+                enterCalculation([calculation[0]], op: calculation[1])
+            } else {
+                print("Cannot currently handle ops of this size so your test is about to time out, sorry!")
+            }
+            
+        }
+    }
 }

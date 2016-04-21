@@ -74,13 +74,14 @@ class CalculatorTests: XCTestCase {
         XCTAssertEqual(calcScreen.displayText("calcDisplay"), "2.0", "Calculator does not correctly multiply")
     }
     
-    // Multiplies two numbers, then adds a number, then subtracts a number, then divides by a number
+    // Multiplies two numbers, then adds a number, then subtracts a number, 
+    // then divides by a number
     func testCompoundBasicOps() {
-        calcScreen.enterCalculation(["4", "2"], op: "multiply")
-        calcScreen.enterCalculation(["5"], op: "add")
-        calcScreen.enterCalculation(["8"], op: "subtract")
-        calcScreen.enterCalculation(["4"], op: "divide")
-        XCTAssertEqual(calcScreen.displayText("calcDisplay"), "1.25", "Calculator does not correctly perform compound operations")
+        let ops = [["4", "2", "multiply"], ["5", "add"],
+            ["8", "subtract"], ["4", "divide"]]
+        calcScreen.enterCalculations(ops)
+        XCTAssertEqual(calcScreen.displayText("calcDisplay"), "1.25",
+            "Calculator does not correctly perform compound operations")
     }
     
     // Square root of one number
