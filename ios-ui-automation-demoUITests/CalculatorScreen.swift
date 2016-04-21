@@ -75,7 +75,12 @@ class CalculatorScreen {
     private func digitsAllThere() -> Bool {
         var allThere = false
         for digit in digits {
-            allThere = self.app.buttons[digit].exists ? true : false
+            if app.buttons[digit].exists {
+                allThere = true
+            } else {
+                allThere = false
+                break
+            }
         }
         return allThere
     }
@@ -83,7 +88,12 @@ class CalculatorScreen {
     private func opsAllThere() -> Bool {
         var allThere = false
         for op in operators {
-            allThere = self.app.buttons[op].exists ? true : false
+            if app.buttons[op].exists {
+                allThere = true
+            } else {
+                allThere = false
+                break
+            }
         }
         return allThere
     }
@@ -91,7 +101,12 @@ class CalculatorScreen {
     private func displaysAllThere() -> Bool {
         var allThere = false
         for display in displays {
-            allThere = self.app.staticTexts[display].exists ? true : false
+            if app.staticTexts[display].exists {
+                allThere = true
+            } else {
+                allThere = false
+                break
+            }
         }
         return allThere
     }

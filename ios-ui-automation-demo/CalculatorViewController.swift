@@ -91,8 +91,6 @@ class CalculatorViewController: UIViewController {
         history.text = historyStack.last!
     }
     
-    // Bullcrap alert: Swift 1.2 thinks two doubles and one double are the same method signature. Sad panda.
-    // Workaround is to give one method an optional default param that we just won't actually use
     // http://stackoverflow.com/questions/28500486/swift-1-2-redeclares-objective-c-method
     func performOperation(r:String? = "2", operation: (Double, Double) -> Double) {
         if operandStack.count >= 2 {
@@ -108,4 +106,15 @@ class CalculatorViewController: UIViewController {
         }
     }
     // End stuff that belongs in a model
+    
+    // A somewhat hacky way to get accessibility ids on the tab bar items
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let tabBar = self.tabBarController!.tabBar
+        let tabItems = tabBar.items!
+        tabBar.accessibilityIdentifier = "tab-bar"
+        tabItems[0].accessibilityIdentifier = "calculator-tab"
+        tabItems[1].accessibilityIdentifier = "item-table-tab"
+        tabItems[2].accessibilityIdentifier = "random-image-tab"
+    }
 }

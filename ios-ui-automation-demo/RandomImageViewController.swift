@@ -21,6 +21,7 @@ class RandomImageViewController : UIViewController {
     
     private func fetchImage() {
         let spinner = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
+        spinner.accessibilityIdentifier = "random-photo-loading"
         spinner.center = self.view.center
         spinner.startAnimating()
         self.view.addSubview(spinner)
@@ -33,6 +34,7 @@ class RandomImageViewController : UIViewController {
                     case let .Success(image):
                         self.image = image
                         self.imageView.image = image
+                        self.imageView.accessibilityIdentifier = "random-photo-loaded"
                         spinner.stopAnimating()
                     case let .Failure(error):
                         print("Unable to load image: \(error)")

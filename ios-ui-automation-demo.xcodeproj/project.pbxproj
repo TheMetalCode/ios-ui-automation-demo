@@ -23,6 +23,11 @@
 		F28FFEA41CC85F18002111CE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28FFEA31CC85F18002111CE /* Item.swift */; };
 		F28FFEA61CC86767002111CE /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28FFEA51CC86767002111CE /* Photo.swift */; };
 		F28FFEA81CC87206002111CE /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28FFEA71CC87206002111CE /* PhotoStore.swift */; };
+		F2B5FC991CC8BC720044C18E /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5FC981CC8BC720044C18E /* TabBar.swift */; };
+		F2B5FC9D1CC8BE840044C18E /* ItemTableScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5FC9C1CC8BE840044C18E /* ItemTableScreen.swift */; };
+		F2B5FC9F1CC8BEB60044C18E /* RandomImageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5FC9E1CC8BEB60044C18E /* RandomImageScreen.swift */; };
+		F2B5FCA51CC8BF8E0044C18E /* UITestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5FCA41CC8BF8E0044C18E /* UITestExtensions.swift */; };
+		F2B5FCA71CC8C2680044C18E /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5FCA61CC8C2680044C18E /* Loadable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,11 @@
 		F28FFEA31CC85F18002111CE /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		F28FFEA51CC86767002111CE /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		F28FFEA71CC87206002111CE /* PhotoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
+		F2B5FC981CC8BC720044C18E /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		F2B5FC9C1CC8BE840044C18E /* ItemTableScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableScreen.swift; sourceTree = "<group>"; };
+		F2B5FC9E1CC8BEB60044C18E /* RandomImageScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomImageScreen.swift; sourceTree = "<group>"; };
+		F2B5FCA41CC8BF8E0044C18E /* UITestExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITestExtensions.swift; sourceTree = "<group>"; };
+		F2B5FCA61CC8C2680044C18E /* Loadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +179,11 @@
 			isa = PBXGroup;
 			children = (
 				F201213B1CB31CCD00B4EBBB /* CalculatorScreen.swift */,
+				F2B5FC981CC8BC720044C18E /* TabBar.swift */,
+				F2B5FC9C1CC8BE840044C18E /* ItemTableScreen.swift */,
+				F2B5FC9E1CC8BEB60044C18E /* RandomImageScreen.swift */,
+				F2B5FCA41CC8BF8E0044C18E /* UITestExtensions.swift */,
+				F2B5FCA61CC8C2680044C18E /* Loadable.swift */,
 			);
 			name = "Screen Objects";
 			sourceTree = "<group>";
@@ -371,6 +386,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B5FC9F1CC8BEB60044C18E /* RandomImageScreen.swift in Sources */,
+				F2B5FCA71CC8C2680044C18E /* Loadable.swift in Sources */,
+				F2B5FCA51CC8BF8E0044C18E /* UITestExtensions.swift in Sources */,
+				F2B5FC991CC8BC720044C18E /* TabBar.swift in Sources */,
+				F2B5FC9D1CC8BE840044C18E /* ItemTableScreen.swift in Sources */,
 				F201213E1CB31CCD00B4EBBB /* CalculatorScreen.swift in Sources */,
 				F20121401CB31CCD00B4EBBB /* IosUIAutomationDemoUITests.swift in Sources */,
 			);
@@ -501,7 +521,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/ios-ui-automation-demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.hagglundized.ios.JJH-Calculator";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.hagglundized.ios.ios-ui-automation-demo";
 				PRODUCT_NAME = "ios-ui-automation-demo";
 			};
 			name = Debug;
@@ -513,7 +533,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/ios-ui-automation-demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.hagglundized.ios.JJH-Calculator";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.hagglundized.ios.ios-ui-automation-demo";
 				PRODUCT_NAME = "ios-ui-automation-demo";
 			};
 			name = Release;
