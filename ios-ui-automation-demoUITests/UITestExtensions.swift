@@ -11,12 +11,12 @@ import XCTest
 
 extension XCTestCase {
     
-    func waitForActivityIndicatorToStartAndFinishSpinning(activityIndicatorElement: XCUIElement, timeout: NSTimeInterval = 30.0) {
-        let inProgressPredicate = NSPredicate(format: "label = 'In progress'")
+    func waitForActivityIndicatorToFinishSpinning(activityIndicatorElement: XCUIElement, timeout: NSTimeInterval = 30.0) {
+        let inProgressPredicate = NSPredicate(format: "exists == true")
         self.expectationForPredicate(inProgressPredicate, evaluatedWithObject: activityIndicatorElement, handler: nil)
         self.waitForExpectationsWithTimeout(timeout, handler: nil)
         
-        let progressHaltedPredicate = NSPredicate(format: "label = 'Progress halted'")
+        let progressHaltedPredicate = NSPredicate(format: "exists == false")
         self.expectationForPredicate(progressHaltedPredicate, evaluatedWithObject: activityIndicatorElement, handler: nil)
         self.waitForExpectationsWithTimeout(timeout, handler: nil)
     }

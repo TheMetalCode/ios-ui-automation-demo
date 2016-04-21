@@ -69,6 +69,7 @@ class ItemTableViewController: UITableViewController {
     }
     
     private func identifyNavBarButtons() {
+        navigationController
         navigationItem.leftBarButtonItem?.accessibilityIdentifier = "edit-button"
         navigationItem.rightBarButtonItem?.accessibilityIdentifier = "add-button"
     }

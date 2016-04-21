@@ -1,5 +1,5 @@
 //
-//  ItemTableScreen.swift
+//  RandomPhotoScreen.swift
 //  ios-ui-automation-demo
 //
 //  Created by Jason Hagglund on 4/21/16.
@@ -9,23 +9,21 @@
 import Foundation
 import XCTest
 
-class ItemTableScreen : Loadable {
+class RandomPhotoScreen : Loadable {
     
     var app : XCUIApplication!
     var tabBar : TabBar!
-    var addButton : XCUIElement!
-    var editButton : XCUIElement!
-    var itemsTable : XCUIElement!
+    var spinner : XCUIElement!
+    var image : XCUIElement!
     
     init(testApp: XCUIApplication) {
         app = testApp
         tabBar = TabBar(testApp: app)
-        addButton = app.buttons["add-button"]
-        editButton = app.buttons["edit-button"]
-        itemsTable = app.tables["items-table"]
+        spinner = app.activityIndicators["random-photo-loading"]
+        image = app.images["random-photo-loaded"]
     }
     
     func allLoaded() -> Bool {
-        return tabBar.allLoaded()
+        return tabBar.allLoaded() && image.exists && !spinner.exists
     }
 }

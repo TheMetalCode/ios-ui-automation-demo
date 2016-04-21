@@ -23,6 +23,7 @@ class RandomImageViewController : UIViewController {
         let spinner = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
         spinner.accessibilityIdentifier = "random-photo-loading"
         spinner.center = self.view.center
+        spinner.hidesWhenStopped = true
         spinner.startAnimating()
         self.view.addSubview(spinner)
         photoStore.fetchRandomPhoto() { (photoResult) -> Void in
@@ -36,6 +37,7 @@ class RandomImageViewController : UIViewController {
                         self.imageView.image = image
                         self.imageView.accessibilityIdentifier = "random-photo-loaded"
                         spinner.stopAnimating()
+                        spinner.removeFromSuperview()
                     case let .Failure(error):
                         print("Unable to load image: \(error)")
                     }

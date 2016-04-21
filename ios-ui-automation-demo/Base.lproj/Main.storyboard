@@ -109,7 +109,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgN-NT-2dT">
                                 <rect key="frame" x="249" y="357" width="102" height="89"/>
-                                <accessibility key="accessibilityConfiguration" identifier="enter"/>
+                                <accessibility key="accessibilityConfiguration" identifier="enter" label="The Enter Button"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="⏎"/>
                                 <connections>

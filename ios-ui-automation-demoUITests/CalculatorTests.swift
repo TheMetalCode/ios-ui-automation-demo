@@ -1,5 +1,5 @@
 //
-//  IosUIAutomationDemoUITests.swift
+//  CalculatorTests.swift
 //  ios-ui-automation-demo
 //
 //  Created by Jason Hagglund on 4/19/16.
@@ -9,7 +9,7 @@
 import Foundation
 import XCTest
 
-class IosUIAutomationDemoUITests: XCTestCase {
+class CalculatorTests: XCTestCase {
         
     let app = XCUIApplication()
     var calcScreen : CalculatorScreen!
@@ -19,6 +19,7 @@ class IosUIAutomationDemoUITests: XCTestCase {
         continueAfterFailure = false
         app.launch()
         calcScreen = CalculatorScreen(testApp: app)
+        calcScreen.tabBar.navigateTo("Calculator")
     }
     
     override func tearDown() {
@@ -26,7 +27,7 @@ class IosUIAutomationDemoUITests: XCTestCase {
     }
     
     // Expect display and all buttons to be present when app loads
-    func testSmoke() {
+    func testSmoke() {                
         XCTAssertTrue(calcScreen.allLoaded(), "App appears to have not loaded properly")
     }
     

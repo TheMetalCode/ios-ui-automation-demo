@@ -13,7 +13,7 @@ class TabBar : Loadable {
     
     var app : XCUIApplication!
     var tabBar : XCUIElement!
-    let tabs = ["calculator", "item-table", "random-photo"]
+    let tabs = ["Calculator", "Item Table", "Random Image"]
     
     init(testApp: XCUIApplication) {
         app = testApp
@@ -27,11 +27,17 @@ class TabBar : Loadable {
     private func allTabsExist() -> Bool {
         var allThere = false
         for tab in tabs {
-            if !tabBar.tabs[tab].exists {
+            if tabBar.buttons[tab].exists {
+                allThere = true
+            } else {
                 allThere = false
                 break
             }
         }
         return allThere
+    }
+    
+    func navigateTo(tab: String) {
+        tabBar.buttons[tab].tap()
     }
 }
